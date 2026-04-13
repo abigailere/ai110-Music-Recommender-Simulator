@@ -26,9 +26,10 @@ Some prompts to answer:
 - What information does your `UserProfile` store
 - How does your `Recommender` compute a score for each song
 - How do you choose which songs to recommend
-
+- write a short paragraph explaining your understanding of how real-world recommendations work and what your version will prioritize.
 You can include a simple diagram or bullet list if helpful.
-
+- Algorithm Recipe
+  - My user profile doesn't include genre because I don't take into account genre much when creating playlists unless I am making a playlist for a specific genre which is not what I want this app to be used for. This app wouldn't be very helpful for someone who wants recommendations for specific genres
 ---
 
 ## Getting Started
@@ -137,7 +138,7 @@ Describe your scoring logic in plain language.
 - What features of each song does it consider
 - What information about the user does it use
 - How does it turn those into a number
-
+List the specific features your Song and UserProfile objects will use in your simulation
 Try to avoid code in this section, treat it like an explanation to a non programmer.
 
 ---
@@ -209,3 +210,4 @@ A few sentences about what you learned:
 - How did building this change how you think about real music recommenders
 - Where do you think human judgment still matters, even if the model seems "smart"
 
+make markdown to take notes

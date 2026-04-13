@@ -9,3 +9,22 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+11,Late Night Thoughts,Cassius Grey,hip-hop,moody,0.65,90,0.42,0.76,0.12
+12,Golden Hour,Sable June,r&b,relaxed,0.52,85,0.73,0.71,0.31
+13,Drop Zone,Circuit Breaker,electronic,intense,0.95,140,0.58,0.92,0.04
+14,Quiet Study Hall,The Ivory Ensemble,classical,focused,0.22,64,0.62,0.30,0.96
+15,Iron Gates,Voltline,metal,intense,0.97,168,0.35,0.52,0.08
+16,Sun and Salt,Coral Tide,reggae,happy,0.61,96,0.88,0.78,0.45
+17,Porch Light,Ember Road,country,relaxed,0.44,88,0.76,0.57,0.67
+18,Velvet Sunday,Marigold Soul,soul,happy,0.68,102,0.87,0.75,0.42
+19,Wooden Bridges,The Hollow Pine,folk,relaxed,0.31,75,0.68,0.28,0.88
+20,Blue Smoke,Delray Cross,blues,moody,0.48,70,0.38,0.33,0.72
+21,Endless Corridor,Pale Signal,post-rock,focused,0.55,94,0.52,0.25,0.41
+22,Candlelight Waltz,The Ivory Ensemble,classical,relaxed,0.26,68,0.74,0.22,0.94
+23,Neon Nights,Indigo Parade,synthwave,moody,0.78,115,0.45,0.70,0.20
+24,City Park Picnic,Marigold Soul,soul,happy,0.64,100,0.82,0.77,0.38
+25,Techno Temple,Circuit Breaker,electronic,intense,0.92,138,0.55,0.90,0.03
+26,Quiet Forest,The Hollow Pine,folk,relaxed,0.29,78,0.70,0.27,0.90
+27,Midnight Jazz,Cassius Grey,hip-hop,moody,0.60,85,0.40,0.74,0.15
+28,Sunset Boulevard,Neon Echo,pop,happy,0.80,120,0.83,0.80,0.25
+29,Lo-Fi Dreams,LoRoom,lofi,chill,0.38,76,0.58,0.61,0.80

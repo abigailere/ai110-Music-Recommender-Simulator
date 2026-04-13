@@ -1,33 +1,50 @@
-"""
-Command line runner for the Music Recommender Simulation.
+from recommender import load_songs, recommend_songs, recommend_wildcard
 
-This file helps you quickly run and test your recommender.
 
-You will implement the functions in recommender.py:
-- load_songs
-- score_song
-- recommend_songs
-"""
+def display_recommendations(recommendations: list, user_prefs: dict) -> None:
+    width = 52
+    sep = "-" * width
 
-from recommender import load_songs, recommend_songs
+    print(f"\n{sep}")
+    print(f"  User Preference  |  mood: {user_prefs['favorite_mood']}  energy: {user_prefs['target_energy']}")
+    print(sep)
+
+    for i, (song, score, explanation) in enumerate(recommendations, 1):
+        bar_filled = round(score * 20)
+        bar = "#" * bar_filled + "." * (20 - bar_filled)
+        reasons = [r.strip() for r in explanation.split(",")]
+
+        print(f"\n  #{i}  {song['title']}  -  {song['artist']}")
+        print(f"       [{bar}]  {score:.2f}")
+        for reason in reasons:
+            print(f"       * {reason}")
+
+    print(f"\n{sep}\n")
 
 
 def main() -> None:
-    songs = load_songs("data/songs.csv") 
+    songs = load_songs("data/songs.csv")
 
     # Starter example profile
-    user_prefs = {"genre": "pop", "mood": "happy", "energy": 0.8}
+    user_prefs = {"favorite_mood": "happy", "target_energy": 0.5, "target_valence": 0.8}
 
     recommendations = recommend_songs(user_prefs, songs, k=5)
+    display_recommendations(recommendations, user_prefs)
 
-    print("\nTop recommendations:\n")
-    for rec in recommendations:
-        # You decide the structure of each returned item.
-        # A common pattern is: (song, score, explanation)
-        song, score, explanation = rec
-        print(f"{song['title']} - Score: {score:.2f}")
-        print(f"Because: {explanation}")
-        print()
+    wildcard_song, wildcard_score, wildcard_explanation = recommend_wildcard(user_prefs, songs, exclude=[s for s, _, _ in recommendations])
+    width = 52
+    sep = "-" * width
+    bar_filled = round(wildcard_score * 20)
+    bar = "#" * bar_filled + "." * (20 - bar_filled)
+    reasons = [r.strip() for r in wildcard_explanation.split(",")]
+    print(f"{sep}")
+    print(f"  Wild Card Pick")
+    print(sep)
+    print(f"\n  {wildcard_song['title']}  -  {wildcard_song['artist']}")
+    print(f"       [{bar}]  {wildcard_score:.2f}")
+    for reason in reasons:
+        print(f"       * {reason}")
+    print(f"\n{sep}\n")
 
 
 if __name__ == "__main__":
