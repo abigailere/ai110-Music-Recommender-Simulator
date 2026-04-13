@@ -28,3 +28,24 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 27,Midnight Jazz,Cassius Grey,hip-hop,moody,0.60,85,0.40,0.74,0.15
 28,Sunset Boulevard,Neon Echo,pop,happy,0.80,120,0.83,0.80,0.25
 29,Lo-Fi Dreams,LoRoom,lofi,chill,0.38,76,0.58,0.61,0.80
+30,Thunder Road,Voltline,rock,intense,0.89,148,0.50,0.68,0.12
+31,After Hours,Slow Stereo,jazz,moody,0.53,88,0.44,0.50,0.83
+32,Noche Caliente,Sol Urbano,reggaeton,intense,0.88,95,0.72,0.93,0.05
+33,Tarde de Abril,Casa Verde,bossa nova,relaxed,0.33,82,0.68,0.58,0.85
+34,Fuego Verde,Sol Urbano,salsa,happy,0.84,188,0.90,0.89,0.12
+35,Lagos Sunrise,Ade Rhythm,afrobeats,happy,0.82,110,0.88,0.91,0.08
+36,Neon Rush,Prism Wave,k-pop,happy,0.87,130,0.80,0.88,0.05
+37,Static Youth,Wire Riot,punk,intense,0.90,162,0.55,0.70,0.04
+38,Dark Drip,Shadow Freq,trap,moody,0.72,140,0.36,0.82,0.06
+39,Cold Pavement,Shadow Freq,drill,moody,0.76,144,0.32,0.78,0.04
+40,Worn Pages,River Holt,acoustic,chill,0.28,66,0.66,0.30,0.95
+41,Honey Light,Velour James,neo-soul,relaxed,0.55,94,0.80,0.68,0.45
+42,Grid Pulse,Circuit Breaker,drum and bass,intense,0.94,174,0.50,0.85,0.02
+43,Pavement Theory,Cassius Grey,boom bap,focused,0.55,88,0.48,0.68,0.22
+44,Mountain Path,Kira Nomad,world,chill,0.35,74,0.62,0.44,0.80
+45,Glass Aria,The Ivory Ensemble,neo-classical,focused,0.23,58,0.57,0.15,0.93
+46,Still Waters,Orbit Bloom,ambient,focused,0.18,55,0.54,0.20,0.95
+47,Creek Bed,River Holt,indie folk,chill,0.30,70,0.60,0.38,0.88
+48,Dust Roads,Ember Road,alt-country,relaxed,0.40,86,0.70,0.52,0.75
+49,Island Frequency,Coral Tide,dancehall,chill,0.55,90,0.76,0.82,0.35
+50,Higher Ground,The Jubilee Choir,gospel,happy,0.74,112,0.92,0.68,0.48
