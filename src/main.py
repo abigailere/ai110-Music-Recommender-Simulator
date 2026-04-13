@@ -22,11 +22,43 @@ def display_recommendations(recommendations: list, user_prefs: dict) -> None:
     print(f"\n{sep}\n")
 
 
+VALID_MOODS = ["happy", "relaxed", "chill", "focused", "moody", "intense"]
+
+
+def get_user_prefs() -> dict:
+    width = 52
+    sep = "-" * width
+    print(f"\n{sep}")
+    print(f"  Music Recommender")
+    print(sep)
+
+    # Mood input
+    print(f"\n  Moods: {', '.join(VALID_MOODS)}")
+    while True:
+        mood = input("  Enter your mood: ").strip().lower()
+        if mood in VALID_MOODS:
+            break
+        print(f"  Invalid mood. Choose from: {', '.join(VALID_MOODS)}")
+
+    # Energy input
+    print("\n  Energy is a number from 0.0 (very calm) to 1.0 (very intense)")
+    while True:
+        raw = input("  Enter your energy level: ").strip()
+        try:
+            energy = float(raw)
+            if 0.0 <= energy <= 1.0:
+                break
+            print("  Please enter a number between 0.0 and 1.0")
+        except ValueError:
+            print("  That's not a valid number. Try something like 0.7")
+
+    return {"favorite_mood": mood, "target_energy": energy}
+
+
 def main() -> None:
     songs = load_songs("data/songs.csv")
 
-    # Starter example profile
-    user_prefs = {"favorite_mood": "happy", "target_energy": 0.5, "target_valence": 0.8}
+    user_prefs = get_user_prefs()
 
     recommendations = recommend_songs(user_prefs, songs, k=5)
     display_recommendations(recommendations, user_prefs)
