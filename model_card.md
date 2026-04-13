@@ -71,3 +71,20 @@ A few sentences about your experience.
 
 - I learned that building a recommendation system takes a lot of planning. It requires thinking about what a user is expecting when they give their preferences. I did not expect it to require so much data to be accurate. I created 50 data points but that may not be enough to get a good working system. In a way it confirmed
 - I use Spotify and one of things I love about the platform is its diverse playlists and ability to recommend diverse songs, however my biggest issue is that once it figures out what you like, it is hard to get recommendations outside of what it has assessed. Building my recommender helped shed light on how difficult it is to balance what users specify as their tastes and how a person actually interacts with music. 
+
+## Photos
+
+### Working as Intended
+![Expected Output 1](photos/expected-output1.png)
+![Expected Output 2](photos/expected-output2.png)
+
+### Adversarial Tests
+
+**Test Oxymoron: Intense, 0.05** — All intense songs have energy 0.91–0.97
+![Oxymoron Test](photos/oxymoron-test.png)
+
+**Test Inverse Gap: Moody, 0.95** — All moody songs cap at 0.78 but exact mood match outweighs energy accuracy
+![Inverse Gap Test](photos/inversegap-test.png)
+
+**Test Dead Zone: Chill, 0.90** — No high energy chill songs exist in the catalog
+![Dead Zone Test](photos/deadzone-test.png)
